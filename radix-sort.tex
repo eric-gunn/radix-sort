@@ -1,0 +1,49 @@
+\documentclass{article}
+\title{Radix Sort}
+\author{Eric Gunn}
+\date{}
+
+\begin{document}
+\maketitle
+
+\noindent The radix sort algorithm sorts items by placing the right most character in a list of strings or least significant digit in a list of numbers in order. Radix sort then moves on to the next character or number and continues the sort. The number of passes radix sort makes is determined by the amount of characters in a string, or digits in a number. For example, if a radix sort is performed on a list of three character strings, it will take three passes of the algorithm to complete the sort.
+	
+\paragraph{Example:}
+\noindent \\Word list: 
+\{COW, DOG, SEA, RUG, ROW, MOB, BOX, TAB, BAR, EAR, TAR, DIG, BIG, TEA\}
+\begin{center}
+	\begin{tabular}{| c | c | c | c |}
+		\hline
+		Initial list & First pass & Second pass & Third pass, sort complete\\
+		\hline
+		COW & SE\textbf{A} & T\textbf{A}B & \textbf{B}AR\\
+		\hline
+		DOG & TE\textbf{A} & B\textbf{A}R & \textbf{B}IG\\
+		\hline
+		SEA & MO\textbf{B} & E\textbf{A}R & \textbf{B}OX\\
+		\hline
+		RUG & TA\textbf{B} & T\textbf{A}R & \textbf{C}OW\\
+		\hline
+		ROW & DO\textbf{G} & S\textbf{E}A & \textbf{D}IG\\
+		\hline
+		MOB & RU\textbf{G} & T\textbf{E}A & \textbf{D}OG\\
+		\hline
+		BOX & DI\textbf{G} & D\textbf{I}G & \textbf{E}AR\\
+		\hline
+		TAB & BI\textbf{G} & B\textbf{I}G & \textbf{M}OB\\
+		\hline
+		BAR & BA\textbf{R} & M\textbf{O}B & \textbf{R}OW\\
+		\hline
+		EAR & EA\textbf{R} & D\textbf{O}G & \textbf{R}UG\\
+		\hline
+		TAR & TA\textbf{R} & C\textbf{O}W & \textbf{S}EA\\
+		\hline
+		DIG & CO\textbf{W} & R\textbf{O}W & \textbf{T}AB\\
+		\hline
+		BIG & RO\textbf{W} & B\textbf{O}X & \textbf{T}AR\\
+		\hline
+		TEA & BO\textbf{X} & R\textbf{U}G & \textbf{T}EA\\
+		\hline
+	\end{tabular}
+\end{center}
+\end{document}
